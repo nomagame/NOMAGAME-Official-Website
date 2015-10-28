@@ -1,0 +1,155 @@
+<!-- Bootstrap -->
+<script src="__PUBLIC__/AdminLTE/js/bootstrap.min.js" type="text/javascript"></script>
+<!-- AdminLTE App -->
+<script src="__PUBLIC__/AdminLTE/js/AdminLTE/app.js" type="text/javascript"></script>
+
+<!-- iCheck -->
+<script src="__PUBLIC__/AdminLTE/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+
+<script>
+    function a_confirm() {
+        var msg = "您真的确定要这样做么吗？\n\n请确认！";
+//        alert(msg);
+
+        if (confirm(msg) == true) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+</script>
+
+
+<script>
+
+
+    function refreshWarningNum(selector1) {
+        var num = $(selector1).find("li").length;
+        $("#warning_box_num").html(num);
+        $("#warning_box_num2").html(num);
+
+    }
+
+
+    //require iCheck
+    $(document).ready(function () {
+
+
+        $("input[type='checkbox'], input[type='radio']").iCheck({
+            checkboxClass: 'icheckbox_minimal',
+            radioClass: 'iradio_minimal'
+        });
+
+
+        $('#check-all').on('ifChecked', function (event) {
+            $('input').iCheck('check');
+        });
+        $('#check-all').on('ifUnchecked', function (event) {
+            $('input').iCheck('uncheck');
+        });
+    });
+</script>
+
+
+<control access="Admin/Index/checkTodo">
+    <script>
+        function fetchWarningList() {
+            var url = '{:U("Admin/Index/checkTodo")}';
+            $.get(url, function (data) {
+                if (data != 'none') {
+                    $('#warning_box').html(data);
+                    refreshWarningNum('#warning_box');
+                } else {
+                    $('#warning_box').html("");
+                    refreshWarningNum('#warning_box');
+                }
+            });
+        }
+        function clearWarningList() {
+            var url = '{:U("Admin/Index/checkTodoCacheClear")}';
+            $.get(url, function (data) {
+            });
+            fetchWarningList();
+        }
+
+        $(document).ready(function () {
+
+            fetchWarningList();
+
+            $('.notifications-menu').click(function () {
+                clearWarningList();
+            });
+
+
+        });
+
+
+
+    </script>
+</control>
+
+<control access="Admin/Posts/index">
+    <script>
+
+        $(document).ready(function () {
+            try
+            {
+                fetchPostCount();
+            }
+            catch (e)
+            {
+
+            }
+        });
+
+
+        function fetchPostCount() {
+            var url = '{:U("Admin/Posts/countAll")}';
+            $.get(url, function (data) {
+                if (data != 'none') {
+
+                    /**
+                     * {
+                        status: 1,
+                        info: {
+                        publish: "4514",
+                        unverified: "0",
+                        reverify: "0",
+                        draft: "4",
+                        preDel: "1"
+                        },
+                        url: ""
+                        }
+                     */
+                    var dataObj = eval("(" + data + ")");//转换为json对象
+                    var obj = jQuery.parseJSON(data);
+
+
+                    $('#admin-posts-index a').append('<small class="badge pull-right bg-green">' + obj.info.single.publish + '</small>');
+                    $('#admin-posts-page a').append('<small class="badge pull-right bg-green">' + obj.info.page.publish + '</small>');
+
+                    if (obj.info.unverified != 0) {
+                        $('#admin-posts-unverified a').append('<small class="badge pull-right bg-yellow">' + obj.info.single.unverified + '</small>');
+                    }
+
+                    if (obj.info.reverify != 0) {
+                        $('#admin-posts-reverify a').append('<small class="badge pull-right bg-red">' + obj.info.single.reverify + '</small>');
+                    }
+
+//                    $('#Admin-Posts-draft a').append('<small class="badge pull-right bg-yellow">'+obj.info.draft+'</small>');
+//                    $('#Admin-Posts-recycle a').append('<small class="badge pull-right bg-yellow">'+obj.info.preDel+'</small>');
+
+                } else {
+
+
+                }
+            });
+        }
+
+
+
+    </script>
+
+
+</control>

@@ -1,0 +1,1765 @@
+[ 2015-10-20T11:39:24+08:00 ] 59.37.125.35 /
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001870s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002262s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.004631s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000760s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000577s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000643s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001570s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001071s ]
+SQL: SELECT `post_id`,`user_id`,`post_date`,`post_content`,`post_title`,`post_status`,`post_comment_status`,`post_password`,`post_name`,`post_template`,`post_modified`,`post_comment_count`,`post_view_count`,`post_type`,`post_img`,`post_top`,`post_url` FROM `hposts` WHERE ( `post_type` = 'single' ) AND ( `post_status` = 'publish' ) ORDER BY post_top desc ,post_date desc LIMIT 7   [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001184s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001581s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001020s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001002s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.001009s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000825s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000729s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000779s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000637s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000777s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000592s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.008691s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002221s ]
+
+[ 2015-10-20T11:39:29+08:00 ] 59.37.125.35 /Public/Charmy/css/fontName.woff
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001810s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002200s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001066s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000497s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000487s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001033s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001086s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000805s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+NOTIC: [8] Undefined variable: module /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [8] Undefined variable: var /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001935s ]
+
+[ 2015-10-20T20:02:31+08:00 ] 110.203.72.187 /
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002125s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002705s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001300s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000695s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000672s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001674s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001142s ]
+SQL: SELECT `post_id`,`user_id`,`post_date`,`post_content`,`post_title`,`post_status`,`post_comment_status`,`post_password`,`post_name`,`post_template`,`post_modified`,`post_comment_count`,`post_view_count`,`post_type`,`post_img`,`post_top`,`post_url` FROM `hposts` WHERE ( `post_type` = 'single' ) AND ( `post_status` = 'publish' ) ORDER BY post_top desc ,post_date desc LIMIT 7   [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001063s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001269s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000904s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001105s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.013114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.001043s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000824s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000733s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000771s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000656s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.001476s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000747s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.009751s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001975s ]
+
+[ 2015-10-20T20:02:34+08:00 ] 110.203.72.187 /Public/Charmy/css/fontName.woff)%20format(%22woff%22),%20url(../fonts/sfont.ttf)%20format(%22truetype%22),%20url(sfont.svg
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002177s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002615s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001213s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000543s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000798s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000973s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001135s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001189s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.019575s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+NOTIC: [8] Undefined variable: module /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [8] Undefined variable: var /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000719s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002141s ]
+
+[ 2015-10-20T20:02:36+08:00 ] 110.203.72.187 /Public/Charmy/fonts/glyphicons-halflings-regular.eot?
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002387s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003109s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001208s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000616s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000554s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000931s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000566s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001069s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.018383s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined variable: module /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [8] Undefined variable: var /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001525s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002273s ]
+
+[ 2015-10-20T20:02:36+08:00 ] 110.203.72.187 /Public/Charmy/fonts/icomoon.eot?
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001958s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002423s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.000917s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000449s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.001163s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001348s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001180s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016481s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+NOTIC: [8] Undefined variable: module /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [8] Undefined variable: var /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000882s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002547s ]
+
+[ 2015-10-20T20:02:49+08:00 ] 101.226.66.181 /
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002392s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002815s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001100s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000516s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000493s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001230s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001071s ]
+SQL: SELECT `post_id`,`user_id`,`post_date`,`post_content`,`post_title`,`post_status`,`post_comment_status`,`post_password`,`post_name`,`post_template`,`post_modified`,`post_comment_count`,`post_view_count`,`post_type`,`post_img`,`post_top`,`post_url` FROM `hposts` WHERE ( `post_type` = 'single' ) AND ( `post_status` = 'publish' ) ORDER BY post_top desc ,post_date desc LIMIT 7   [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001091s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001386s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000913s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000937s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015634s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001301s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000805s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000861s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000800s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000797s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000686s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000860s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000600s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.009604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001217s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002059s ]
+
+[ 2015-10-20T20:03:26+08:00 ] 110.203.72.187 /
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001892s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002318s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.000855s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000480s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000416s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000673s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001192s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001071s ]
+SQL: SELECT `post_id`,`user_id`,`post_date`,`post_content`,`post_title`,`post_status`,`post_comment_status`,`post_password`,`post_name`,`post_template`,`post_modified`,`post_comment_count`,`post_view_count`,`post_type`,`post_img`,`post_top`,`post_url` FROM `hposts` WHERE ( `post_type` = 'single' ) AND ( `post_status` = 'publish' ) ORDER BY post_top desc ,post_date desc LIMIT 7   [ RunTime:0.000762s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.000994s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000972s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000894s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001349s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012502s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000894s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000840s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.001058s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.001184s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000968s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000636s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.009538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001199s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002009s ]
+
+[ 2015-10-20T20:03:26+08:00 ] 110.203.72.187 /Public/Charmy/css/fontName.woff)%20format(%22woff%22),%20url(../fonts/sfont.ttf)%20format(%22truetype%22),%20url(sfont.svg
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002513s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002977s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.002290s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000516s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000545s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001058s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000984s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000983s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001135s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.018362s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+NOTIC: [8] Undefined variable: module /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [8] Undefined variable: var /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002016s ]
+
+[ 2015-10-20T20:03:26+08:00 ] 110.203.72.187 /Public/Charmy/fonts/glyphicons-halflings-regular.eot?
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002258s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002747s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001470s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000554s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000558s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001244s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000844s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000948s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001407s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.022946s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Undefined variable: module /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [8] Undefined variable: var /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003041s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001910s ]
+
+[ 2015-10-20T20:03:26+08:00 ] 110.203.72.187 /Public/Charmy/fonts/icomoon.eot?
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002494s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.000909s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000526s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000477s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000637s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001108s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.002005s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001092s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.018301s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+NOTIC: [8] Undefined variable: module /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [8] Undefined variable: var /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002087s ]
+
+[ 2015-10-20T20:08:51+08:00 ] 110.203.72.187 /
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002357s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002960s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001148s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000554s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000517s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001578s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001111s ]
+SQL: SELECT `post_id`,`user_id`,`post_date`,`post_content`,`post_title`,`post_status`,`post_comment_status`,`post_password`,`post_name`,`post_template`,`post_modified`,`post_comment_count`,`post_view_count`,`post_type`,`post_img`,`post_top`,`post_url` FROM `hposts` WHERE ( `post_type` = 'single' ) AND ( `post_status` = 'publish' ) ORDER BY post_top desc ,post_date desc LIMIT 7   [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001113s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001269s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000893s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.086656s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000987s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000823s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.001051s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000933s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000688s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000845s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000668s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.010668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001287s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002219s ]
+
+[ 2015-10-20T20:08:56+08:00 ] 110.203.72.187 /Public/Charmy/css/fontName.woff
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001837s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002263s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001145s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000505s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000489s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001087s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000967s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001139s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.018865s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Undefined variable: module /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [8] Undefined variable: var /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002776s ]
+
+[ 2015-10-20T20:11:22+08:00 ] 110.203.72.187 /index.php?a=story_detail&storyname=ppgs
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001937s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002389s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.003701s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.002419s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000533s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000916s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000860s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001103s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.039200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000848s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000804s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000797s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000828s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.002184s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.001089s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000668s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.010527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002440s ]
+
+[ 2015-10-20T20:11:22+08:00 ] 110.203.72.187 /css/products/style.css
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001882s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002290s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001084s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000539s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000550s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001440s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000935s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.002169s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001243s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.018389s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+NOTIC: [8] Undefined variable: module /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [8] Undefined variable: var /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001925s ]
+
+[ 2015-10-20T20:11:35+08:00 ] 110.203.72.187 /index.php?a=story_detail&storyname=qwlc
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002237s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002738s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001162s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000906s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000536s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001129s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001222s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000860s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001434s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.019135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000825s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000810s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000985s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000881s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.001136s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000624s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003478s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.010459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000947s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002436s ]
+
+[ 2015-10-20T20:11:35+08:00 ] 110.203.72.187 /css/products/style.css
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001958s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002419s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001108s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000514s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000514s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001048s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000934s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000960s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001123s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017568s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+NOTIC: [8] Undefined variable: module /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [8] Undefined variable: var /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002532s ]
+
+[ 2015-10-20T20:12:09+08:00 ] 110.203.72.187 /index.php?a=story_detail&storyname=qwdy
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002192s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002638s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001168s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000531s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000482s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001307s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001212s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001113s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.018923s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000790s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000717s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000840s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000763s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000803s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000624s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003990s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.009080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002466s ]
+
+[ 2015-10-20T20:12:09+08:00 ] 110.203.72.187 /css/products/style.css
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003341s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003949s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001173s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000506s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000514s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001246s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000936s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001119s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017286s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Undefined variable: module /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [8] Undefined variable: var /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002011s ]
+
+[ 2015-10-20T20:12:18+08:00 ] 110.203.72.187 /index.php?a=story_detail&storyname=wmdgs
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002747s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003389s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001165s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000518s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000536s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001209s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000959s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001075s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.019001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000799s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000865s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.001383s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000908s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000656s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.001388s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.001434s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.012175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000703s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002025s ]
+
+[ 2015-10-20T20:12:19+08:00 ] 110.203.72.187 /css/products/style.css
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002380s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002849s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001190s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000583s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000452s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001035s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015614s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Undefined variable: module /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [8] Undefined variable: var /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002004s ]
+
+[ 2015-10-20T20:19:43+08:00 ] 110.203.72.187 /
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001855s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002248s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001053s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000497s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000448s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000607s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001186s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001023s ]
+SQL: SELECT `post_id`,`user_id`,`post_date`,`post_content`,`post_title`,`post_status`,`post_comment_status`,`post_password`,`post_name`,`post_template`,`post_modified`,`post_comment_count`,`post_view_count`,`post_type`,`post_img`,`post_top`,`post_url` FROM `hposts` WHERE ( `post_type` = 'single' ) AND ( `post_status` = 'publish' ) ORDER BY post_top desc ,post_date desc LIMIT 7   [ RunTime:0.000570s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001069s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000916s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001175s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.002719s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000833s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000806s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.001018s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000805s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000683s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.001155s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000794s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011870s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000736s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002053s ]
+
+[ 2015-10-20T20:23:22+08:00 ] 62.210.85.77 /index.php?a=product_detail&productname=compose
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002586s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001203s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000530s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000501s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001475s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000902s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000982s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001127s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001138s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000890s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.001456s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000826s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000827s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000687s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000842s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000685s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012354s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.009559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001215s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002028s ]
+
+[ 2015-10-20T20:23:30+08:00 ] 62.210.85.77 /index.php?a=story_detail&storyname=wzdy
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001912s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002364s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.002162s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000489s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000434s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+ERR: 模板不存在:./Application/Home/View/NovaGreenStudio/Story/wzdy.html
+
+[ 2015-10-20T20:23:43+08:00 ] 62.210.85.77 /index.php?a=story_detail&storyname=xmzl
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002483s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001155s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000542s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.005212s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000936s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001128s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.021350s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002520s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000818s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000883s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000735s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000855s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000681s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000865s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000708s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.008888s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002075s ]
+
+[ 2015-10-20T20:23:49+08:00 ] 62.210.85.77 /index.php?m=
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001841s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002253s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001053s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000417s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000428s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001423s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.000975s ]
+SQL: SELECT `post_id`,`user_id`,`post_date`,`post_content`,`post_title`,`post_status`,`post_comment_status`,`post_password`,`post_name`,`post_template`,`post_modified`,`post_comment_count`,`post_view_count`,`post_type`,`post_img`,`post_top`,`post_url` FROM `hposts` WHERE ( `post_type` = 'single' ) AND ( `post_status` = 'publish' ) ORDER BY post_top desc ,post_date desc LIMIT 7   [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001012s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000986s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000957s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000824s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.003896s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000794s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000785s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000778s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000654s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000766s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000604s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000590s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002188s ]
+
+[ 2015-10-20T20:24:02+08:00 ] 62.210.85.77 /index.php?m=home&c=cat&a=detail&info=1
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002657s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003224s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001248s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000548s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000522s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'auto_channel' ) LIMIT 1   [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001206s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001176s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000897s ]
+SQL: SELECT * FROM `hcats` WHERE ( (`cat_id` = '1') OR (`cat_slug` = '1') ) LIMIT 1   [ RunTime:0.000819s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.001014s ]
+SQL: SELECT * FROM `hpost_cat` WHERE ( 1=1 AND cat_id='1' ) ORDER BY cat_id  [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000825s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('1') and pc.post_id=ps.post_id and ps.post_status ='publish' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 99999999   [ RunTime:0.000807s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'PAGER' ) LIMIT 1   [ RunTime:0.000967s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+NOTIC: [8] Undefined variable: downPage /data/home/qxu1591190246/htdocs/Application/Common/Util/GreenPage.class.php 第 218 行.
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001380s ]
+SQL: SELECT `post_id`,`user_id`,`post_date`,`post_content`,`post_title`,`post_status`,`post_comment_status`,`post_password`,`post_name`,`post_template`,`post_modified`,`post_comment_count`,`post_view_count`,`post_type`,`post_img`,`post_top`,`post_url` FROM `hposts` WHERE ( `post_type` = 'single' ) AND ( `post_status` = 'publish' ) AND ( `post_id` IN ('4','1') ) ORDER BY post_top desc ,post_date desc LIMIT 0,20   [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `htags` [ RunTime:0.001045s ]
+SQL: SELECT b.* FROM hpost_tag AS a, htags AS b WHERE a.tag_id = b.tag_id AND a. post_id='4' ORDER BY tag_id [ RunTime:0.000819s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Util/CacheManager.class.php 第 50 行.
+SQL: SELECT b.* FROM hpost_cat AS a, hcats AS b WHERE a.cat_id = b.cat_id AND a. post_id='4' ORDER BY cat_id [ RunTime:0.000644s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Util/CacheManager.class.php 第 50 行.
+SQL: SHOW COLUMNS FROM `huser` [ RunTime:0.001320s ]
+SQL: SELECT * FROM `huser` WHERE ( 1=1 AND user_id='1' ) LIMIT 1   [ RunTime:0.000940s ]
+SQL: SELECT b.* FROM hpost_tag AS a, htags AS b WHERE a.tag_id = b.tag_id AND a. post_id='1' ORDER BY tag_id [ RunTime:0.000803s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Util/CacheManager.class.php 第 50 行.
+SQL: SELECT b.* FROM hpost_cat AS a, hcats AS b WHERE a.cat_id = b.cat_id AND a. post_id='1' ORDER BY cat_id [ RunTime:0.000821s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Util/CacheManager.class.php 第 50 行.
+NOTIC: [8] Undefined variable: module /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [8] Undefined variable: var /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001334s ]
+SQL: SELECT * FROM `hcats` WHERE ( (`cat_id` = '1') OR (`cat_slug` = '1') ) LIMIT 1   [ RunTime:0.000605s ]
+NOTIC: [8] Undefined index: cat_father_detail /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 637 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001478s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001045s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000663s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001403s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001805s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000420s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'site_url' ) LIMIT 1   [ RunTime:0.000913s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.057105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003509s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.034236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.037302s ]
+SQL: SELECT * FROM `hposts` ORDER BY post_id LIMIT 4   [ RunTime:0.000815s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.067598s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005737s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.044718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.050039s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005983s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.044718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.050271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000902s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002435s ]
+
+[ 2015-10-20T20:27:11+08:00 ] 110.203.72.187 /index.php?a=story_detail&storyname=contact
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001799s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002207s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001175s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000561s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000558s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001044s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000933s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001135s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016486s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.001207s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000789s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000911s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000668s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000842s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000717s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.009557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002598s ]
+
+[ 2015-10-20T20:27:11+08:00 ] 110.203.72.187 /css/products/style.css
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001791s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002192s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001056s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000566s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000483s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001049s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000959s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000891s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017586s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002530s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000299s ]
+NOTIC: [8] Undefined variable: module /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [8] Undefined variable: var /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003069s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001918s ]
+
+[ 2015-10-20T20:45:48+08:00 ] 110.203.72.187 /index.php?a=story_detail&storyname=contact
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003120s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003743s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001279s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.001408s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000538s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001131s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000839s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001215s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.014783s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000849s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000788s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000838s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000569s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.001722s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000806s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.009675s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000712s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001211s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002016s ]
+
+[ 2015-10-20T20:45:49+08:00 ] 110.203.72.187 /css/products/style.css
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001846s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002227s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001022s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000463s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000495s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001322s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000900s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000973s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001126s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.015363s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined variable: module /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [8] Undefined variable: var /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002037s ]
+
+[ 2015-10-20T20:46:20+08:00 ] 110.203.72.187 /index.php?a=story_detail&storyname=coop
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002745s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003336s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001216s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000538s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000471s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.002222s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001161s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001023s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001132s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.020461s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001153s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000923s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.001235s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.001059s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000694s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000827s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000788s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.011152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000890s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002705s ]
+
+[ 2015-10-20T20:46:21+08:00 ] 110.203.72.187 /css/products/style.css
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001959s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002381s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001133s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000548s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000470s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001033s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000894s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001020s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.018056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+NOTIC: [8] Undefined variable: module /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [8] Undefined variable: var /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] array_reverse() expects parameter 1 to be array, null given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+NOTIC: [2] http_build_query(): Parameter 1 expected to be Array or Object.  Incorrect value given /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Common/functions.php 第 913 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000844s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002297s ]
+
+[ 2015-10-20T20:46:32+08:00 ] 110.203.72.187 /
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002248s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002674s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001170s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000460s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000513s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000659s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001531s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001271s ]
+SQL: SELECT `post_id`,`user_id`,`post_date`,`post_content`,`post_title`,`post_status`,`post_comment_status`,`post_password`,`post_name`,`post_template`,`post_modified`,`post_comment_count`,`post_view_count`,`post_type`,`post_img`,`post_top`,`post_url` FROM `hposts` WHERE ( `post_type` = 'single' ) AND ( `post_status` = 'publish' ) ORDER BY post_top desc ,post_date desc LIMIT 7   [ RunTime:0.000962s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001115s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001060s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000892s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000948s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012432s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001141s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000883s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000813s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000803s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000695s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000882s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000728s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.009902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002038s ]
+
+[ 2015-10-20T20:57:55+08:00 ] 54.157.12.53 /
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001953s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002364s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001982s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000630s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000476s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001432s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001164s ]
+SQL: SELECT `post_id`,`user_id`,`post_date`,`post_content`,`post_title`,`post_status`,`post_comment_status`,`post_password`,`post_name`,`post_template`,`post_modified`,`post_comment_count`,`post_view_count`,`post_type`,`post_img`,`post_top`,`post_url` FROM `hposts` WHERE ( `post_type` = 'single' ) AND ( `post_status` = 'publish' ) ORDER BY post_top desc ,post_date desc LIMIT 7   [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001040s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001176s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000903s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012933s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000985s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000726s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000822s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000987s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000946s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000998s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000689s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.009742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002128s ]
+
+[ 2015-10-20T21:17:47+08:00 ] 110.203.72.187 /
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002478s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001314s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000571s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000492s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001783s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001089s ]
+SQL: SELECT `post_id`,`user_id`,`post_date`,`post_content`,`post_title`,`post_status`,`post_comment_status`,`post_password`,`post_name`,`post_template`,`post_modified`,`post_comment_count`,`post_view_count`,`post_type`,`post_img`,`post_top`,`post_url` FROM `hposts` WHERE ( `post_type` = 'single' ) AND ( `post_status` = 'publish' ) ORDER BY post_top desc ,post_date desc LIMIT 7   [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `hposts` [ RunTime:0.001047s ]
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.001367s ]
+SQL: SHOW COLUMNS FROM `hmenu` [ RunTime:0.000895s ]
+SQL: SELECT * FROM `hmenu` WHERE ( `menu_position` = 'head' )  [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.001250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `hcats` [ RunTime:0.000892s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000810s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000759s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000797s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000632s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+SQL: SHOW COLUMNS FROM `hpost_cat` [ RunTime:0.000975s ]
+SQL: SELECT ps.post_id FROM hpost_cat as pc,hposts as ps WHERE ( cat_id IN ('%s') and pc.post_id=ps.post_id and ps.post_status ='%s' ) ORDER BY ps.post_top desc,ps.post_date desc LIMIT 0,10   [ RunTime:0.000671s ]
+NOTIC: [2] Invalid argument supplied for foreach() /data/home/qxu1591190246/htdocs/Application/Common/Logic/CatsLogic.class.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.008684s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000720s ]
+INFO: Run Behavior\ChromeShowPageTraceBehavior [ RunTime:0.001203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002006s ]
+

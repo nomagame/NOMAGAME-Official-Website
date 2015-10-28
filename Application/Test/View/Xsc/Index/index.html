@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>{:get_opinion('title')} </title>
+    <meta name="description" content="{:get_opinion('keywords')}"/>
+    <include file="Public:head"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .sel_wrap {
+            height: 40px;
+            color: #a1a1a1;
+            font-size: 16px;
+
+            border: 2px solid #b5b5b5;
+
+            cursor: pointer;
+            position: relative;
+            _filter: alpha(opacity=0);
+
+
+            margin: 0 auto;
+            margin-top: 15px;
+
+        }
+
+        .sel_wrap label {
+            padding-left: 5px;
+            font-size: 18px;
+            z-index: 2;
+            color: #606060;
+            line-height: 40px;
+            height: 40px;
+            display: block;
+        }
+
+        .sel_wrap .select {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            z-index: 4;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            /**margin-top: 12px;*/
+            filter: alpha(opacity=0);
+            cursor: pointer;
+            font-size:18px;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<php>
+    $CatsLogic=new Common\Logic\CatsLogic();
+
+    $id_1_2 = $CatsLogic->getPostsByCat(get_theme_opinion("id_1_2"), 10 ,0 ,false );
+    $id_2_1 = $CatsLogic->getPostsByCat(get_theme_opinion("id_2_1"), 8 ,0 ,false );
+    $id_2_2 = $CatsLogic->getPostsByCatWithChildren(get_theme_opinion("id_2_2"), 8 ,0 ,false );
+    $id_2_3 = $CatsLogic->getPostsByCat(get_theme_opinion("id_2_3"), 8 ,0 ,false );
+    $slider = D('Tags', 'Logic')->getPostsByTag(3, 10 ,0 ,false );
+</php>
+{:W('Common/mainMenu',array('ul_attr'=>'class="menu"'))}
+<div style="clear:both;"></div>
+<div id="content" style="border:none">
+    <div style="margin: 0 auto;">
+        <div class="head_box" style="width:400px;">
+            <div id="slide" class="news-slide " style="">
+                <volist name="slider" id="v" key="k">
+                    {:get_post_thumbnail($v)}
+                </volist>
+            </div>
+        </div>
+        <!--<div class="head_box" style="width:  300px;">-->
+        <!--<div class="header"><a href="{:get_cat_url(get_theme_opinion('id_1_1'))}"-->
+        <!--class="more">更多</a><span>{:get_theme_opinion('text_1_1')}</span></div>-->
+        <!--<div class="body">-->
+        <!--&lt;!&ndash;<div style="clear:both;"></div>&ndash;&gt;-->
+        <!--<div class="box" style="">-->
+        <!--<ul class="list1">-->
+        <!--<volist name="id_1_1" id="v" key="k">-->
+        <!--<li>-->
+        <!--<a href="{$v|get_post_url}" title="{$v['post_title']}">-->
+        <!-- {$v|get_post_icon}-->
+        <!--{$v['post_title']|strip_tags|mb_substr=0,20,"UTF-8"}</a>-->
+        <!--<span>-->
+        <!--{$v['post_date']|mb_substr=5,5,"UTF-8"}-->
+        <!--</span>-->
+        <!--</li>-->
+        <!--</volist>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <div class="head_box" style="width:  480px; margin-left: 10px;margin-left: 0px\9;">
+            <div class="header">
+                <a href="{:get_cat_url(get_theme_opinion('id_1_2'))}"
+                   class="more" style="margin-right: 0px;  text-align: right;">更多</a>
+                <img src="__PUBLIC__/Xsc/images/icon/news.png" alt="" style="width: 30px;
+    float: left;
+    height: 30px;
+    margin: 5px;
+    ">
+                <span>{:get_theme_opinion('text_1_2')}</span>
+
+            </div>
+            <div class="body">
+                <div class="box" id="quotation" style="  height: 200px;">
+                    <ul class="list1">
+                        <volist name="id_1_2" id="v" key="k">
+                            <li>
+                                <a href="{$v|get_post_url}" title="{$v['post_title']}">
+                                    {$v|get_post_icon}
+                                    {$v['post_title']|strip_tags|mb_substr=0,29,"UTF-8"}
+                                </a>
+                                &nbsp;&nbsp;
+
+                                <span>{$v.post_date|getTimeStamp='month'}-{$v.post_date|getTimeStamp='day'}</span>
+
+                            </li>
+                        </volist>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head_box" style="width:  140px; margin-left: 20px;  ">
+        <div class="header" style="text-align: center">
+            <a style="float: left" href="{:U('Admin/Index/index')}">在线投稿</a>
+            <a  style="float: right"  href="{:get_addon_url('Postcount/Postcount/count')}">发稿统计</a>
+        </div>
+        <div class="body" style="  padding: 8px 0px;text-align: center">
+            <div class="box" style="z-index:2">
+
+                <a class="" href="#">
+                    <img src="__PUBLIC__/Xsc/images/xsbd.png" alt="">
+                </a>
+                <a class="" href="#" id="ele9">
+                    <img src="__PUBLIC__/Xsc/images/alst.png" alt="">
+                </a>
+
+
+                <div id="emample9" class="example">
+                    <div class="clr"></div>
+                                     <div id="blk9" class="blk" style="display:none;">
+                        <div class="head"><div class="head-right"></div></div>
+                        <div class="main">
+                            <h2>选择进入的入口</h2>
+                            <a href="javascript:void(0)" id="close9" class="closeBtn">关闭</a>
+                            <ul>
+                                <li><a class="" href="http://202.119.248.129/login.aspx">
+                                    <img src="__PUBLIC__/Xsc/images/aljs.png" alt="">
+                                </a>
+                                </li>
+                                <li><a class="" href="http://202.119.248.129:866/">
+                                    <img src="__PUBLIC__/Xsc/images/alxs.png" alt="">
+                                </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="foot"><div class="foot-right"></div></div>
+                    </div>
+                </div>
+
+
+                <a class="" href="{:U('Admin/Index/index')}">
+                    <img src="__PUBLIC__/Xsc/images/gldl.png" alt="">
+                </a>
+
+
+                <form name="fr" id="fr" action="{:U('Home/Archive/search')}" method="get">
+                    <div style="width:140px;  height:26px; overflow:hidden; padding: 5px 2px 0px;float:left;">
+                        <input name="keyword" type="text" value="" style="   border: 1px solid #ccc;
+ width:100px; height:13px; padding:5px 0 6px 0; line-height:13px; color:#666; outline:none;  text-indent:6px; font-family:'微软雅黑'; font-size:12px;float:left; background:0px;"/>
+                        <input name="" type="submit" value="搜索" style="  border: 1px solid #ccc;
+; background:0px;  width:35px; cursor:pointer; height:26px; display:block; outline:none;">搜索</input>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<div style="clear:both;"></div>
+<div class="center_middle" style="">
+    <div class="left_half">
+        <div class="header" style="border-top: solid 5px #3686be;">
+            <a href="{:get_cat_url(get_theme_opinion('id_2_1'))}">更多</a>
+            <img src="__PUBLIC__/Xsc/images/icon/notification.png" alt="" style="">
+
+            <div class="header_info">
+                {:get_theme_opinion('text_2_1')}
+            </div>
+        </div>
+        <div class="body">
+            <ul>
+                <volist name="id_2_1" id="v" key="k">
+                    <li>
+                        <span>{$v.post_date|getTimeStamp='month'}-{$v.post_date|getTimeStamp='day'}</span>
+
+                        <a href="{$v|get_post_url}" title="{$v['post_title']}">
+                            {$v|get_post_icon}
+                            {$v['post_title']|strip_tags|mb_substr=0,25,"UTF-8"}</a>
+                    </li>
+                </volist>
+            </ul>
+        </div>
+    </div>
+    <div class="left_half" style=" ">
+        <div class="header" style="border-top: solid 5px #008287;">
+            <a href="{:get_cat_url(get_theme_opinion('id_2_2'))}">更多</a>
+            <img src="__PUBLIC__/Xsc/images/icon/edit_page.png" alt="" style="">
+
+            <div class="header_info">{:get_theme_opinion('text_2_2')}</div>
+        </div>
+        <div class="body">
+            <ul>
+                <volist name="id_2_2" id="v" key="k">
+                    <li>
+                        <span>{$v.post_date|getTimeStamp='month'}-{$v.post_date|getTimeStamp='day'}</span>
+                        <a href="{$v|get_post_url}" title="{$v['post_title']}">
+                            {$v|get_post_icon}
+                            {$v['post_title']|strip_tags|mb_substr=0,25,"UTF-8"}</a>
+                    </li>
+                </volist>
+            </ul>
+        </div>
+    </div>
+    <div class="left_half" style="width: 250px;   padding-right: 0px;">
+        <div class="header" style="border-top: solid 5px #40445E;">
+            <a href="{:get_cat_url(get_theme_opinion('id_2_3'))}">更多</a>
+            <img src="__PUBLIC__/Xsc/images/icon/books.png" alt="" style="">
+
+            <div class="header_info">{:get_theme_opinion('text_2_3')}</div>
+        </div>
+        <div class="body">
+            <ul>
+                <volist name="id_2_3" id="v" key="k">
+                    <li>
+                        <!--<span>              {$v.post_date|getTimeStamp='month'}-{$v.post_date|getTimeStamp='day'}</span>-->
+                        <a href="{$v|get_post_url}" title="{$v['post_title']}">
+                            {$v|get_post_icon}
+                            {$v['post_title']|strip_tags|mb_substr=0,25,"UTF-8"}</a>
+                    </li>
+                </volist>
+            </ul>
+        </div>
+    </div>
+</div>
+<div style="clear:both;"></div>
+<div class="center_middle" style="">
+    <div class="left_half" style="  width: 780px;" id="c4_right_2">
+        <!--<div class="header" style="border-top: solid 5px #78BA00;">-->
+        <!--<div class="header_info">友情链接</div>-->
+        <!--</div>-->
+        <div class="body" style="border-top: solid 5px #78BA00;">
+            <div style="text-align: center;margin-top: 5px">
+                <!--<friendlist link_group_id="4" num="6"></friendlist>-->
+                <ul class="left_half_ul">
+                    <li><a href="{:U('home/cat/detail',array('info'=>'103'))}" title="理论学习">
+                        <img src="__PUBLIC__/Xsc/images/llxx.png" alt="理论学习"/>
+                    </a></li>
+
+                    <li><a href="{:U('home/cat/detail',array('info'=>'104'))}" title="先进典型">
+                        <img src="__PUBLIC__/Xsc/images/xjdx.png" alt="先进典型"/>
+
+                    </a></li>
+
+                    <li><a href="{:U('Zel/Index/index')}" title="周恩来班" target="_blank">
+                        <img src="__PUBLIC__/Xsc/images/zelb.png" alt="周恩来班"/>
+                    </a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="left_half" style="width: 22%;padding-right: 0%;">
+
+        <div class="body" style="padding:5px 10px 0 0;border-top: solid 5px #252525;">
+
+
+
+            <div style="text-align: center; ">
+                <!--<div class="sel_wrap" style=" margin-top: 5px;">-->
+                    <!--<label>----|校内链接|----</label>-->
+                    <!--<select class="select" style="width:120px"-->
+                            <!--onchange="window.open(this.options[this.selectedIndex].value)"-->
+                            <!--size="1"-->
+                            <!--name="mlink">-->
+                        <!--<optionfriendlist link_group_id="1"></optionfriendlist>-->
+                    <!--</select>-->
+                <!--</div>-->
+                <div class="sel_wrap" style="  ">
+                    <label>----|友情链接|----</label>
+
+                    <select class="select" style=" "
+                            onchange="window.open(this.options[this.selectedIndex].value)"
+                            size="1"
+                            name="mlink2">
+                        <optionfriendlist link_group_id="3"></optionfriendlist>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div style="clear:both;"></div>
+</div>
+<include file="Public:footer"/>
+<script type="application/javascript">
+    $(function () { //头部nav部分； $('.indexnav-content div.menu1').hover(function(){$(this).addClass('focuse');},function(){$(this).removeClass('focuse');}) //
+        $('#indexbanner .bannerchoose').each(function () {
+            var href = $(this).attr('href');
+            if (href != "") {
+                (new Image()).src = href;
+            }
+        })
+        var bannerfadetime = 2000;
+        var onbanner = false;
+        if ($('#indexbanner .bannerinner a.hrefbanner').length > 1) {
+            window.indexp = {};
+            (function () {
+                indexp.num = $('#indexbanner .lights a').length;
+                indexp.index = 0;
+                indexscroll();
+            }())
+            $('#indexbanner .right').bind('click', function () {
+                if ($('#indexbanner').is(":animated")) {
+                    return false;
+                }
+                clearInterval(bannerinterval);
+                indexp.index = (++indexp.index >= indexp.num ? 0 : indexp.index);
+                //console.log(indexp.index);
+                $('.ground').hide().eq(indexp.index).css('display', 'block').css('opacity', 0).animate({'opacity': 1}, bannerfadetime);
+                $('#indexbanner .lights a').eq(indexp.index).addClass('focused').siblings('a').removeClass('focused');
+                $('#indexbanner .bannerinner .hrefbanner').eq(indexp.index).show().siblings('.hrefbanner').hide();
+                indexscroll();
+            })
+            $('#indexbanner .left').bind('click', function () {
+                if ($('#indexbanner').is(":animated")) {
+                    return false;
+                }
+                clearInterval(bannerinterval);
+                indexp.index = (indexp.index == 0 ? indexp.num - 1 : --indexp.index);
+                $('.ground').hide().eq(indexp.index).css('display', 'block').css('opacity', 0).animate({'opacity': 1}, bannerfadetime);
+                $('#indexbanner .lights a').eq(indexp.index).addClass('focused').siblings('a').removeClass('focused');
+                $('#indexbanner .bannerinner .hrefbanner').eq(indexp.index).show().siblings('.hrefbanner').hide();
+                indexscroll();
+            })
+            $('#indexbanner .lights a').bind('click', function () {
+                indexp.index = $(this).index();
+                clearInterval(bannerinterval);
+                $('.ground').hide().eq(indexp.index).css('display', 'block').css('opacity', 0).animate({'opacity': 1}, bannerfadetime);
+                $('#indexbanner .lights a').eq(indexp.index).addClass('focused').siblings('a').removeClass('focused');
+                $('#indexbanner .bannerinner .hrefbanner').eq(indexp.index).show().siblings('.hrefbanner').hide();
+                indexscroll();
+            })
+            $('.index-colum .li-1 .news .tit').hover(
+                    function () {
+                        $(this).addClass('bordernone');
+                        $(this).parents('.news').eq(0).siblings('.news').find('.con').stop().hide().end().find('.tit').removeClass('bordernone');
+                        $(this).next('.con').fadeIn();
+                    },
+                    function () {
+                    }
+            )
+        }
+        function indexscroll() {
+            bannerinterval = setInterval(function () {
+                if (onbanner)return;
+                indexp.index = (++indexp.index >= indexp.num ? 0 : indexp.index);
+                $('#indexbanner .lights a').eq(indexp.index).addClass('focused').siblings('a').removeClass('focused');
+                // $('#indexbanner .bannerinner .describ').eq(indexp.index).show().siblings('.describ').hide();
+                //console.log($('#indexbanner .bannerchoose').eq(indexp.index).attr('style'));
+                $('.ground').hide().eq(indexp.index).css('display', 'block').css('opacity', 0).animate({'opacity': 1}, bannerfadetime);
+                $('#indexbanner .lights a').eq(indexp.index).addClass('focused').siblings('a').removeClass('focused');
+                console.log("indexp.index:" + indexp.index);
+                console.log("indexp.num:" + indexp.num);
+                $('#indexbanner .bannerinner .hrefbanner').eq(indexp.index).show().siblings('.hrefbanner').hide();
+            }, 3500)
+        }
+
+//    $("#indexbanner").mouseover(function(){onbanner=true});
+//    $("#indexbanner").mouseout(function(){onbanner=false})
+
+    })
+</script>
+<script type="text/javascript">
+
+    //文字纵向滚动
+    $(function () {
+        var $this = $("#quotation");
+        var scrollTimer;
+        $this.hover(function () {
+            clearInterval(scrollTimer);
+        }, function () {
+            scrollTimer = setInterval(function () {
+                scrollNews($this);
+            }, 1500);
+        }).trigger("mouseleave");
+        function scrollNews(obj) {
+            var $self = obj.find("ul");
+            var lineHeight = $self.find("li:first").height();
+            $self.animate({
+                "marginTop": -lineHeight + "px"
+            }, 500, function () {
+                $self.css({
+                    marginTop: 0
+                }).find("li:first").appendTo($self);
+            })
+        }
+    });
+	
+    var t9 = new PopupLayer({trigger:"#ele9",popupBlk:"#blk9",closeBtn:"#close9",
+            useOverlay:true,useFx:true,offsets:{x:0,y:-41}});
+
+    $(document).ready(function () {
+
+ 
+        t9.doEffects = function(way){
+            if(way == "open"){
+/*
+                alert(($(document).width() - this.popupLayer.width())/2);
+*/
+                this.popupLayer.css({opacity:0.3}).show(200,function(){
+                    this.popupLayer.animate({
+                        left:($(document).width() - this.popupLayer.width())/2,
+                        top:(document.documentElement.clientHeight -
+                        this.popupLayer.height())/2 + $(document).scrollTop(),
+                        opacity:0.8
+                    },800,function(){this.popupLayer.css("opacity",1)}.binding(this));
+                }.binding(this));
+            }
+            else{
+                this.popupLayer.animate({
+                    left:this.trigger.offset().left,
+                    top:this.trigger.offset().top,
+                    opacity:0.1
+                },{duration:500,complete:function(){
+                    this.popupLayer.css("opacity",1);this.popupLayer.hide()}.binding(this)});
+            }
+        }
+
+
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+.title {
+    /*width: 1140px;*/
+    /*width: 90%;*/
+    margin-top: 11px;
+    height: 50px;
+    width: 830px;
+    float: left;
+    background-color: #DADADA;
+
+}
+
+.title h1 {
+    /*margin-top: 1px;*/
+    margin-left: 25px;
+    font-size: 25px;
+    line-height: 50px;
+
+    font-weight: bold;
+
+    width: 400px;
+    float: left;
+    color: #000000;
+}
+
+.breadcrumbs {
+    margin-right: 15px;
+    float: right;
+    margin-top: 20px;
+}
+
+.breadcrumbs li {
+    float: left;
+    font-size: 15px;
+    color: #4B4B4B;
+}
+
+.breadcrumbs li a {
+    float: left;
+    font-size: 15px;
+    color: #4B4B4B;
+}
+
+.blog {
+    width: 1000px;
+    margin: 20px auto;
+}
+
+
+.Titlelist{
+    margin-top : 10px;
+    margin-bottom : 10px;
+
+
+}
+
+.Titlenamelist {
+    width: 789px;
+}
+
+.Titlename {
+    width: 780px;
+    /*float: left;*/
+}
+
+.Titlename a {
+    color: rgb(70, 70, 70);
+
+}
+
+.Titlename h2 a {
+    margin: 20px 10px 20px 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: #4D4D4D;
+}
+
+.Titlename h2 a:hover {
+    color: #336ec5;
+}
+
+.Titletip {
+
+    margin: 5px 10px 0px 10px;
+}
+
+.continue {
+    float: right;
+    font-size: 15px;
+
+}
+
+.foot {
+    width: 750px;
+}
+
+.footlist {
+    text-align: center;
+    width: 750px;
+    margin: 20px auto;
+}
+
+.footlist li {
+    display: inline;
+    margin: 5px;
+}
+
+.footlist a {
+    font-size: 16px;
+    /*display: block;*/
+    border: solid 1px #AAAAEE;
+    color: #1A63BA;
+    text-decoration: none;
+    padding: 4px 8px;
+
+}
+
+
+.article-list {
+    color: #000000;
+    width: 789px;
+    margin: 0px auto;
+    padding: 0px 20px 10px 20px;
+    float: left;
+    border: 1px solid #EBEBEB;
+
+
+}
+
+
+#yxfc ul li {
+    /*height: 35px;*/
+    line-height: 35px;
+}
+
+
+#yxfc ul li a{
+    text-align: left;
+    font-size: 14px;
+    padding-left: 14px;
+
+    /*font-weight: 600;*/
+
+}
+
+
+/*display: block;*/

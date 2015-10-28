@@ -1,0 +1,148 @@
+[ 2015-10-19T00:05:36+08:00 ] 183.54.15.41 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002527s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001388s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000588s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000479s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+
+[ 2015-10-19T01:12:55+08:00 ] 183.54.15.41 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001905s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002316s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001209s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000678s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000562s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+
+[ 2015-10-19T09:54:13+08:00 ] 110.203.77.121 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002258s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002779s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001373s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000645s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000892s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+
+[ 2015-10-19T09:54:15+08:00 ] 110.203.77.121 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002818s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003399s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.000998s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000446s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000577s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+
+[ 2015-10-19T09:56:44+08:00 ] 110.203.77.121 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002413s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002849s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.000999s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000530s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000635s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+
+[ 2015-10-19T10:02:09+08:00 ] 14.17.22.37 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002437s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001012s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000433s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000502s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+
+[ 2015-10-19T10:08:02+08:00 ] 110.203.77.121 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001896s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002352s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.002469s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000531s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000519s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+
+[ 2015-10-19T10:08:02+08:00 ] 110.203.77.121 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002578s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.000874s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000495s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000432s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+
+[ 2015-10-19T10:30:08+08:00 ] 113.247.33.139 /Public/Charmy/css/fontName.woff
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001974s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002423s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+NOTIC: [2] mysql_connect(): Host '115.29.100.35' is not allowed to connect to this MySQL server /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+ERR: Host '115.29.100.35' is not allowed to connect to this MySQL server
+
+[ 2015-10-19T10:30:23+08:00 ] 113.247.33.139 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002827s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003423s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001146s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000444s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000390s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+
+[ 2015-10-19T10:31:53+08:00 ] 113.247.33.139 /Upload/Img/2015/10-11/561a70017f342.jpg
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001996s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002444s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001204s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000536s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000499s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+
+[ 2015-10-19T11:37:27+08:00 ] 183.54.15.41 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002420s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001644s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000536s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000487s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+
+[ 2015-10-19T15:55:26+08:00 ] 14.17.22.35 /
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+ERR: 无法加载模块:Home
+
+[ 2015-10-19T15:55:28+08:00 ] 14.17.22.37 /
+INFO: [ app_init ] --START--
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+ERR: 无法加载模块:Home
+
+[ 2015-10-19T16:10:25+08:00 ] 183.54.15.41 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002695s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003293s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001132s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000582s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000550s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+
+[ 2015-10-19T16:26:18+08:00 ] 183.54.15.41 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002390s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002820s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /data/home/qxu1591190246/htdocs/Core/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hoptions` [ RunTime:0.001150s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'SHOW_PAGE_TRACE' ) LIMIT 1   [ RunTime:0.000525s ]
+SQL: SELECT * FROM `hoptions` WHERE ( `option_name` = 'COOKIE_DOMAIN' ) LIMIT 1   [ RunTime:0.000520s ]
+NOTIC: [8] Use of undefined constant DEFAULT_EXPIRES_TIME - assumed 'DEFAULT_EXPIRES_TIME' /data/home/qxu1591190246/htdocs/Application/Common/Common/function.php 第 104 行.
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> {$action} | {:get_opinion('title')}</title>
+
+    <include file="Public:head"/>
+
+</head>
+<body class="skin-blue">
+
+{:W('Common/header')}
+
+<div class="wrapper row-offcanvas row-offcanvas-left">
+    {:W('Common/sideMenu')}
+
+
+    <!-- Right side column. Contains the navbar and content of the page -->
+    <aside class="right-side">
+        <!-- Content Header (Page header) -->
+
+
+        <section class="content-header">
+            <h1>
+                {$action}
+                <small>{:get_opinion('title')}</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="{$module_url}"><i class="fa fa-dashboard"></i> {$module}</a></li>
+                <li class="active">{$action}</li>
+            </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content" style="background-color: #fffdbd">
+
+            <div class="row">
+                <div class="col-md-10">
+
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <h3 class="box-title" style="color: #FF0000">&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;如果你不了解这里的用处,请勿随意更改</h3>
+
+                        <hr/>
+
+                        <form action="{:U('Admin/System/saveHandle')}" name="change_System" role="form"
+                              method="post">
+                            <div class="form-group">
+                                <label class="control-label">系统build</label>
+
+                                <div class="controls">
+                                    <input type="text" placeholder="" class="form-control large"
+                                           name="software_build"
+                                           value="{:get_opinion('software_build',true)}"/>
+                                        <span class="help-inline">请勿随意修改,会影响自动升级
+                                        <br/>
+                                           verion_config中系统build {$GreenCMS_Build}
+                                        </span>
+
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label">系统版本</label>
+
+                                <div class="controls">
+                                    <input type="text" placeholder="" class="form-control large"
+                                           name="software_version"
+                                           value="{:get_opinion('software_version',true)}"/>
+                                        <span class="help-inline">请勿修改
+                                        <br/>
+                                           verion_config中系统版本 {$GreenCMS_Version}
+
+                                        </span>
+                                </div>
+                            </div>
+
+
+                            <!--<div class="form-group">-->
+                                <!--<label class="control-label">开启Dev功能</label>-->
+
+                                <!--<div class="controls">-->
+
+                                    <!--<switchopinioncontrol opinion_name="preopr_function">-->
+
+
+                                    <!--</switchopinioncontrol>-->
+
+
+                                <!--</div>-->
+                            <!--</div>-->
+                            <div class="form-group">
+                                <label class="control-label">开启Dev版本更新</label>
+
+                                <div class="controls">
+
+                                    <switchopinioncontrol opinion_name="preopr_update">
+
+
+                                    </switchopinioncontrol>
+
+
+                                </div>
+                            </div>
+
+                            <!--<div class="form-group">-->
+                            <!--<label class="control-label">后台主题</label>-->
+
+                            <!--<div class="controls">-->
+                            <!--<select class="form-control large"   tabindex="1" name="DEFAULT_ADMIN_THEME" id="DEFAULT_ADMIN_THEME">-->
+                            <!--{$DEFAULT_ADMIN_THEME}-->
+
+                            <!--</select>-->
+                            <!--<span class="help-inline">AdminLTE bug较多，仅支持ie9以上</span>-->
+                            <!--</div>-->
+                            <!--</div>-->
+
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-info"><i class="icon-ok"></i> 修改</button>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- /.content -->
+    </aside>
+    <!-- /.right-side -->
+</div>
+<!-- ./wrapper -->
+
+<include file="Public:foot"/>
+
+</body>
+</html>

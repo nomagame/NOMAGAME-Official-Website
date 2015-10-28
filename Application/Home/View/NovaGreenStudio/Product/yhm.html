@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{:get_opinion('title')}</title>
+    <meta name="description" content="{:get_opinion('description')}">
+    <meta name="keywords" content="{:get_opinion('keywords')}"/>
+    <meta name="author" content="greenstudio"/>
+
+    <meta name="viewport" content="width=device-width">
+    
+    <include file="Public:head"/>
+    <link rel="stylesheet" href="__PUBLIC__/Charmy/css/product/style.css">
+    {:hook('pageHeader', "")}
+
+</head>
+
+<body>
+{:hook('userHeader', "")}
+
+
+{:W('Widget/menuHead')}
+
+<php>
+    $CatsLogic=new Common\Logic\CatsLogic();
+
+    $cat71 = $CatsLogic->getPostsByCat(get_theme_opinion("id1"), 10 ,0 ,false );
+    $cat73 = $CatsLogic->getPostsByCat(get_theme_opinion("id2"), 10 ,0 ,false );
+    $cat13 = $CatsLogic->getPostsByCat(get_theme_opinion("id3"), 10 ,0 ,false );
+
+</php>
+
+<section class="k1120">
+      <div class="title">
+        <span>洋槐蜜 
+          <br>
+          <b>发布于：2015-10-01 
+            <script src="css/products/style.css" type="text/javascript" language="javascript"></script>
+          </b>
+        </span>
+      </div>
+      <div class="viewMain">
+        <p>
+          <img src="__PUBLIC__/Charmy/images/products/product02_img.jpg" alt="">
+        </p>
+         <!--
+        <div class="paging">
+          <a href="/index.php?a=product_detail&productname=szm"><i class="fa fa-angle-double-left"></i></a>
+          <a href="/index.php?a=product_detail&productname=zhm"><i class="fa fa-angle-double-right"></i></a>
+        </div>
+      -->
+      </div>
+    </section>
+<include file="Public:bottom"/>
+
+<include file="Public:footer"/>
+
+<include file="Public:foot"/>
+
+
+<script type="text/javascript">
+    $(function () {
+      $(".newslist").bootstrapNews({
+		newsPerPage: 1,
+		autoplay: true,
+		pauseOnHover: true,
+		navigation: false,
+		direction: 'down',
+		newsTickerInterval: 2500,
+		onToDo: function () {
+			//console.log(this);
+		}
+	});
+    });
+</script>
+
+{:hook('pageFooter', "")}
+
+</body>
+</html>
